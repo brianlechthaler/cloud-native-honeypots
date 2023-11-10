@@ -1,4 +1,5 @@
 FROM ubuntu:22.04
+RUN apt-get update
 RUN apt-get install -y git libssl-dev libffi-dev build-essential libpython3-dev python3-minimal
 RUN git clone https://github.com/cowrie/cowrie /opt/cowrie
 WORKDIR /opt/cowrie
